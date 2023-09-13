@@ -65,7 +65,7 @@ window.addEventListener('scroll', function() {
 
     if (scrollPosition > 550) {
         image.parentElement.style.position = 'absolute';
-        image.parentElement.style.top = '818px';
+        image.parentElement.style.top = '767px';
         image.style.transform = 'scale(1)';
     }
 });
