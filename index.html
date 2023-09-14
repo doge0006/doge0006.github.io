@@ -45,6 +45,7 @@ img {vertical-align: middle;}
 
 </head>
 
+
 <header class="bg-gradient" id="home">
     <div class="container mt-5">
     </div>
@@ -70,7 +71,7 @@ img {vertical-align: middle;}
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item"> <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#download">Script</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#script">Script</a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#discord">Discord</a> </li>
                             </ul>
                             </ul>
@@ -87,13 +88,15 @@ img {vertical-align: middle;}
             top: -750px;
         }
     </style>
-    
-    <header class="bg-gradient" id="home">
+    <body data-spy="scroll" data-target="#navbar" data-offset="30">
+          <header class="bg-gradient" id="home">
         <div class="container mt-5">
             <h1 class="moved-text">dogeware</h1>
         </div>
     </header>
+    </body>
     
+  
     
 <!--  
          <div><img src="images/NEWUI.png" alt="phone" class="img-fluid"></div> 
@@ -103,65 +106,9 @@ img {vertical-align: middle;}
 </div>
 <br>
 
-<script>
-var player;
-function onYouTubePlayerAPIReady() {
-    player = new YT.Player('player', {
-      height: '335',
-      width: '662',
-      videoId: 'kA1zmr6XUoU',
-      events: {
-        'onStateChange': onPlayerStateChange
-      }
-    });
-    console.log(player)
-}
-
-var isplaying = false
-function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.PLAYING) {
-        isplaying = true
-        console.log(isplaying)
-    }
-    else if(event.data == YT.PlayerState.PAUSED){
-        isplaying = false;
-    }
-}
-
-
-var slideIndex = 1;
-showSlides();
-
-function showSlides() {
-  if (slideIndex == 3 && isplaying) {
-    setTimeout(showSlides, 3500)  
-    return;
-  }
-  var i;
-  var dots = document.getElementsByClassName("dot");
-  document.getElementById("slide1").style.display = "none";
-  document.getElementById("slide2").style.display = "none";  
-  document.getElementById("slide3").style.display = "none";  
-  slideIndex++;
-  if (slideIndex > 4) {slideIndex = 2}    
-  
-  if (isplaying && slideIndex != 3)
-  {
-      slideIndex = 3;
-  }
-  
-  document.getElementById("dot1").style.backgroundColor = "#bbb";
-  document.getElementById("dot2").style.backgroundColor = "#bbb";
-  document.getElementById("dot3").style.backgroundColor = "#bbb";
-  document.getElementById(`slide${slideIndex-1}`).style.display = "block";  
-  document.getElementById(`dot${slideIndex-1}`).style.backgroundColor = "#717171";
-
-  setTimeout(showSlides, 3500); // Change image every 2 seconds
-}
-</script>
     </header>
 
-    <div class="section light-bg" id="features">
+    <div class="section light-bg" id="script">
         <div class="container">
             <div class="section-title">
                 <h3>Features</h3>
@@ -240,6 +187,11 @@ function showSlides() {
             </div>
         </div>
     </div>
+
+    
+    <div class="section light-bg" id="discord">
+        <div class="container">
+            <div class="call-to-action">
 
     <div style="display: flex; justify-content: center;">
         <a href="link1.html">
