@@ -489,9 +489,9 @@ header {
   
     /* Add scroll-snap-stop */
     scroll-snap-stop: always;
-}
-
-#dynamic-image {
+  }
+  
+  #dynamic-image {
     /* Set a specific width and height */
     width: 30%;
     height: auto;
@@ -502,38 +502,10 @@ header {
     margin-right: auto;
   
     transition: transform 0.5s ease;
-}
+  }
 
-body {
-    padding-top: 700px; /* Adjust this value as needed */
-}
-
-/* For devices smaller than 600px */
-@media only screen and (max-width: 600px) {
-    .parallax {
-        height: 70vh;
-    }
+  body {
+    padding-top: 00px; /* Adjust this value as needed */
+  }
   
-    #dynamic-image {
-        width: 50%;
-    }
   
-    body {
-        padding-top: 500px;
-    }
-}
-
-/* For devices larger than 600px but smaller than 1200px */
-@media only screen and (min-width: 601px) and (max-width: 1200px) {
-    .parallax {
-        height: 60vh;
-    }
-  
-    #dynamic-image {
-        width: 40%;
-    }
-  
-    body {
-        padding-top: 600px;
-    }
-}
