@@ -22,7 +22,7 @@ let t;
 const n = document.getElementById("navBarbanner")
   , c = document.getElementById("bannerText");
 async function r() {
-    await fetch("https://raw.githubusercontent.com/shlexware/SiriusDependencies/main/banner.json").then(e=>e.json()).then(e=>{
+    await fetch("https://raw.githubusercontent.com/doge0006/doge0006.github.io/main/dependencies/banner.json").then(e=>e.json()).then(e=>{
         t = e
     }
     ),
