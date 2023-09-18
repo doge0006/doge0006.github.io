@@ -53,19 +53,20 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.pageYOffset;
     var image = document.getElementById('dynamic-image');
 
-    if (scrollPosition <= 550) {
-        image.style.transform = 'scale(' + (1 + scrollPosition / 1000) + ')';
+    if (scrollPosition <= 1735) {
+        image.style.transform = 'scale(' + (1 + scrollPosition / 2000) + ')';
         image.parentElement.style.position = 'fixed';
         image.parentElement.style.top = 'calc(50% - 250px)';
     } else if (scrollPosition > 500 && scrollPosition <= 1000) {
-        image.style.transform = 'scale(' + (2 - scrollPosition / 1000) + ')';
+        image.style.transform = 'scale(' + (.25 - scrollPosition / 2000) + ')';
         image.parentElement.style.position = 'fixed';
         image.parentElement.style.top = 'calc(50% - 250px)';
     }
 
-    if (scrollPosition > 550) {
+    if (scrollPosition > 1500) {
         image.parentElement.style.position = 'absolute';
-        image.parentElement.style.top = '767px';
+        image.parentElement.style.top = '1750px';
         image.style.transform = 'scale(1)';
     }
 });
+

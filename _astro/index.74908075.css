@@ -1,0 +1,8 @@
+#introTextGradient:where(.astro-UZGVUCTH) {
+    --gradient-transparent-progress: calc(var(--gradient-color-progress) + var(--gradient-feather) * -1%);
+    --gradient-feather: 60;
+    --gradient-angle: 158deg;
+    background-image: linear-gradient(var(--gradient-angle),#cecece var(--gradient-transparent-progress),#cecece00 var(--gradient-color-progress),#cecece00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000
+}

@@ -1,0 +1,7 @@
+#navBar:where(.astro-5BLMO7YK) {
+    background-color: #1d1d1eb3;
+    transition: background-color .5s cubic-bezier(.28,.11,.32,1);
+    transition-property: background-color,-webkit-backdrop-filter;
+    transition-property: background-color,backdrop-filter;
+    transition-property: background-color,backdrop-filter,-webkit-backdrop-filter
+}
