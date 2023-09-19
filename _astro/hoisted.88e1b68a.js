@@ -5382,7 +5382,7 @@ const In = me.timeline({
 });
 Oa.set("#introTextColor", {
     text: {
-        value: "doge006"
+        value: "be better."
     }
 }).to("#introTextColor", {
     text: {
@@ -5406,7 +5406,7 @@ Oa.set("#introTextColor", {
     }
 }, "+=0.5").to("#introTextColor", {
     text: {
-        value: "be better."
+        value: "doge006"
     }
 }, "+=0.5"),
 In.to("#introText", {
