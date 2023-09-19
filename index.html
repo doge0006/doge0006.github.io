@@ -18,7 +18,27 @@
 <script src="https://cdn.jsdelivr.net/gh/doge0006/doge0006.github.io/_astro/hoisted.88e1b68a.js" type="module"></script>
 <script src="https://cdn.jsdelivr.net/gh/doge0006/doge0006.github.io/_astro/page.756ffed2.js" type="module"></script>  
 <script src="https://cdn.jsdelivr.net/gh/doge0006/doge0006.github.io/_astro/Navbar.astro_astro_type_script_index_0_lang.849d72e6.js" type="module"></script>
+<!-- Explanation as to why you need to use cdn.jsdelivr.net instead of github.com.  
+    GitHub Pages is a static site hosting service and it doesn’t provide the ability to control the MIME types of individual files231.
 
+However, there’s a workaround you can use. You can use a service like jsDelivr, which is a free CDN (Content Delivery Network) for open-source projects. jsDelivr can serve your files with the correct MIME types. Here’s how you can do it:
+
+Find the file you are linking to on GitHub, and click to the “Raw” version.
+Copy the URL.
+Replace raw.githubusercontent.com with cdn.jsdelivr.net.
+Add /gh/ just before your username.
+Remove the branch name4.
+So, for example, if your original GitHub raw URL is:
+
+https://raw.githubusercontent.com/doge0006/doge0006.github.io/main/_astro/privacy.06a83d71.css
+
+You would change it to:
+
+https://cdn.jsdelivr.net/gh/doge0006/doge0006.github.io/_astro/privacy.06a83d71.css
+
+This URL will serve your CSS file with the correct text/css MIME type.
+    Thanks to BING AI  -->
+  
 <style>
 
 img {vertical-align: middle;}
