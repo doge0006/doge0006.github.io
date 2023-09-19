@@ -5386,7 +5386,7 @@ Oa.set("#introTextColor", {
     }
 }).to("#introTextColor", {
     text: {
-        value: "AIO"
+        value: "All in One"
     }
 }, "+=0.5").to("#introTextColor", {
     text: {
